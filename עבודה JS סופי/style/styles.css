@@ -1,0 +1,330 @@
+/* #region General */
+/***************************************
+General
+***************************************/
+html{
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+@font-face {
+  font-family: 'Heebo';
+  src: url(../fonts/Heebo.ttf);
+}
+
+
+
+/* #endregion */
+
+/* #region Header */
+/***************************************
+Header
+***************************************/
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  justify-content: space-around;
+  margin-left: 60px;
+  margin-top: 2%;
+}
+
+#icon{
+  width:70px;
+}
+
+h1{
+  color:rgb(114, 171, 203);
+}
+
+#search{
+  border: 2px solid rgb(114, 171, 203);
+  border-radius: 4px;
+}
+/* #endregion */
+
+
+/* #region main */
+/***************************************
+main
+***************************************/
+main{
+  flex-grow: 1;
+}
+span{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  margin-top: 1%;
+}
+ul{
+  margin-top: 40px;
+  margin-left: 20%;
+  
+   width: 60%;
+
+}
+li{
+  list-style: none;
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  margin-top: 2%;
+  font-weight: 500;
+  
+}
+
+li img{
+  width: 50px;
+}
+
+#addBTN{
+  width: 70px;
+  position: absolute;
+  right: 50px;
+}
+#colorChange{
+  width: 40px;
+  position: absolute;
+   top:5px;
+   right: 50px;
+  
+}
+
+#wrapperPop{
+  position: fixed;
+    top: 0;
+    left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(216, 216, 216, 0.8);
+  display: none;
+}
+
+#popUp {
+  position: fixed;
+  top:30%;
+  right: 32%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background-color: rgb(114, 171, 203);
+  width: 500px;
+}
+
+#popUp p{
+  font-size: xx-large;
+  margin-top: 1%;
+}
+#popUp img{
+  width: 20px;
+  position: absolute;
+  right: 10px;
+}
+
+#wrapperAdd{
+  position: fixed;
+    top: 0;
+    left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(216, 216, 216, 0.8);
+  display: none;
+}
+#popUpAdd {
+  position: fixed;
+  top:25%;
+  right: 32%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background-color: rgb(114, 171, 203);
+  width: 500px;
+  font-size: x-large;
+}
+#closeBtn{
+  width: 20px;
+  position: absolute;
+  right: 10px;
+}
+#closeBton{
+  width: 20px;
+  position: absolute;
+  right: 10px;
+}
+#popUpAdd input{
+  margin-top: 7%;
+}
+#popUpAdd h2{
+  text-align: center;
+}
+#popUpAdd button{
+  width: 80px;
+  height: 50px;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.btnD{
+  width: 60px;
+  height: 40px;
+}
+.btnE{
+  width: 60px;
+  height: 40px;
+}
+
+
+.home{
+  display:none;
+}
+.mail{
+  display:none;
+}
+
+.changePage{
+  background-color: LightSteelBlue;
+  font-size: larger;
+}
+
+
+
+/* #endregion */
+
+
+/* #region footer */
+/***************************************
+footer
+***************************************/
+
+footer{
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region media */
+/***************************************
+media
+***************************************/
+@media only screen and (max-width: 390px) {
+ body{
+  font-size: large;
+ }
+  header{
+    display: block;
+    margin-top: 20px;
+  }
+  #icon{
+    display: none;
+  }
+  h1{
+    font-size: large;
+    margin-right: 10px;
+    margin-left: 40px;
+
+    
+  }
+  header{
+    width: 60%;
+    margin-left: 0px;
+  }
+  #search{
+    width: 50px;
+  }
+  ul{
+    margin-left: 25px;
+    
+  }
+
+  li{
+    width: 100%;
+    list-style: none;
+    gap: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  span{
+    font-size: 0.1em;
+  }
+  li img{
+    width: 20px;
+  }
+
+  .btnD{
+    width: 30px;
+    height: 10px;
+    font-size: 0.1em;
+  }
+  .btnE{
+    width: 30px;
+    height: 10px;
+    font-size: 0.1em;
+  }
+
+  #addBTN{
+    width: 35px;
+    position: absolute;
+    right: 50px;
+  }
+
+  #colorChange{
+    width: 20px;
+    position: absolute;
+     top:5px;
+     right: 50px;
+     margin-top: 20px;
+    
+  }
+
+  #popUpAdd {
+    position: fixed;
+    top:25%;
+    right:12%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: rgb(114, 171, 203);
+    width: 300px;
+    font-size: medium;
+  }
+
+  #popUp{
+    position: fixed;
+    top:25%;
+    right:12%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: rgb(114, 171, 203);
+    width: 300px;
+    
+  }
+
+  #popUp p{
+    font-size: medium;
+  }
+
+  
+  .fname:first-child{
+    display: none;
+  }
+  ul{
+    margin-left: 18%;
+  }
+  footer{
+    font-size: x-small;
+  }
+
+}
+
+/* #endregion */

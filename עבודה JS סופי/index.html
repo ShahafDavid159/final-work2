@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="./style/styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <header>
+      <div id="wrapper">
+        <div><a href="index.html"><img id="icon" src="images/phone-call.png" alt="icon"></a></div>
+        <div><h1>PHONEBOOK</h1></div>
+        <div><input type="text" id="search"></div>
+      </div>
+    </header>
+      <main>
+        <ul id="ulChangeStyle" >
+
+        </ul>
+        <button><img id="addBTN" src="images/add.png" alt="addBtn" onclick="openPopUp()"></button>
+        <button ><img src="images/settings.png" alt="change" id="colorChange" class="reg" onclick="changeWebColor()"></button>
+        <div id="wrapperPop" onClick="closeModal(event)">
+          <div id="popUp"> 
+            
+          </div>
+
+
+        </div>
+
+        <div id="wrapperAdd" onClick="closeModal2(event)">
+          <div id="popUpAdd">
+            <img src="images/close.png" id="closeBtn" alt="close Button" onClick="closeModal2(event)">
+            <h2>Form</h2>
+            <form  class="form-container">
+              <div class="item">
+                <label >First Name:</label>
+                <input type="text" id="firsName" name="firsName" placeholder="Enter your first name" maxlength="30" required/>
+              </div>
+              
+              <div class="item">
+                <label>Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" maxlength="30" required>
+              </div>
+              <div class="item">
+                <label >Email</label>
+                <input type="text" placeholder="Enter Email" id="Email"  required>
+              </div>
+              <div class="item">
+                <label >Home address:</label>
+                <input type="text" id="homeAddress" name="homeAddress" placeholder="Enter your home address" maxlength="80" required>
+              </div>
+              <div class="item">
+                <label >Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"  required>
+              </div>
+              <div id="popUpBtn">
+              <button type="button" id="change" onclick="add()" >save</button>
+              <button type="button"  onclick="closeForm()">Close</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p> &copy; Adiel Sofia Mendelson and Shahaf David </p>
+    
+    
+      </footer>
+   
+  <script src="js.js"></script>
+</body>
+</html>
